@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- Make it compatible to mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Student Grade Prediction</title>
+  
+</head>
+
+<body style="background-color: bisque">
+ <div class="login" align="center" >
+	<h1 style="color:cadetblue;">Student Grade Prediction </h1>
+
+     
+     <h3 style="color:firebrick">
+     enter 1 or 0 on the gender form where 1=male and 0=female<br>
+         enter the direct values on the other forms<br>
+     
+     </h3>
+     <!-- Action is where the data is sent. In our case, predict page.
+     If action is omitted, it assumed to be the current page -->
+    <form action="{{ url_for('predict')}}"method="post">
+        
+    <input type="text" name="Gender" placeholder="Gender" required="required" />   	
+        <input type="text" name="Current CGPA" placeholder="Current CGPA" required="required" />
+        <input type="text" name="Test score" placeholder="Test score" required="required" /><br>    	
+        
+            	
+        
+        <p>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict Grade</button></p>
+    </form>
+
+   <br>
+   <br>
+   <h3 style="color:firebrick;">
+   {{ prediction_text }} </h3>
+
+    
+ </div>
+
+
+</body>
+</html>
