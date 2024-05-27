@@ -11,7 +11,7 @@ numpydoc
 pandas 
 pandocfilters 
 pytz==2021.3
-scikit-image==0.18.3
 scikit-learn 
 scikit-learn-intelex
 typing-extensions 
+gunicorn
