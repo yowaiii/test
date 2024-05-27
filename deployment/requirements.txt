@@ -13,5 +13,5 @@ pandocfilters
 pytz==2021.3
 scikit-image==0.18.3
 scikit-learn 
-scikit-learn-intelex==2021.20210714.120553
+scikit-learn-intelex
 typing-extensions 
