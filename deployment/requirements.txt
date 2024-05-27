@@ -1,4 +1,3 @@
-async-generator @ file:///home/ktietz/src/ci/async_generator_1611927993394/work
 attrs @ file:///tmp/build/80754af9/attrs_1620827162558/work
 Babel @ file:///tmp/build/80754af9/babel_1620871417480/work
 certifi==2021.10.8
