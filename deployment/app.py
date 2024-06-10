@@ -5,7 +5,7 @@ from flask import Flask,request,render_template
 
 app=Flask(__name__)
 
-model=pickle.load(open('models/stdgrades.pkl','rb'))
+model=pickle.load(open('models/stdgrade.pkl','rb'))
 
 @app.route('/')
 def home():
